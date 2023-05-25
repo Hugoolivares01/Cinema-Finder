@@ -40,7 +40,10 @@ router.get('/login', (req, res) => {
 
 router.get('/movies', withAuth, async (req, res) => {
   try {
+    const movieData = await MovieList.findAll();
+    const movies = movieData.map((movie) => movie.get({ plain: true }));
     res.render('Movies', {
+      movies,
       logged_in: true
     });
   } catch (err) {
