@@ -10,9 +10,4 @@ User.belongsTo(SavedMovies, {
 MovieList.belongsTo(User, {
   foreignKey: 'user_id'
 });
-
-// SavedMovies.belongsTo(User, {
-//   foreignKey: 'user_id'
-// });
-
 module.exports = { User, MovieList, SavedMovies };
