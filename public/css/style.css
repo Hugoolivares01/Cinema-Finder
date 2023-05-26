@@ -1,5 +1,63 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #50a3a2;
+  color: #fff;
+  border-bottom: 0.07rem solid #ccc;
+  padding: 2rem 0;
+}
+
+header h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav a,
+header nav button {
+  color: #fff;
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+
+header nav a:hover,
+header nav button:hover {
+  color: #046;
+  text-decoration: underline;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+button {
+  background: #50a3a2;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #37a;
+  transition: background 0.5s ease;
+}
+
+footer {
+  background: #50a3a2;
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+  margin-top: auto;
 }
 
 .no-button {
@@ -15,10 +73,36 @@ header, .project:not(:last-child) {
 .no-button:hover {
   color: #065b83;
   text-decoration: underline;
+  transition: color 0.5s ease;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+/* Add animation to form inputs on focus */
+.form-input:focus {
+  border-color: #50a3a2;
+  box-shadow: 0 0 1rem #50a3a2;
+  transition: box-shadow 0.5s ease;
+}
+
+/* Add smooth transition to all links and buttons */
+a, button {
+  transition: all 0.3s ease-out;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  header {
+    padding: 1rem 0;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+  }
+  
+  footer {
+    padding: 2rem;
+  }
 }
