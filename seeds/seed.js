@@ -14,14 +14,6 @@ const seedDatabase = async () => {
 
   const movies = await MovieList.bulkCreate(MovieData);
 
-  for (const movies of MovieData) {
-    await movies.create({
-      ...movies,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
-    });
-  }
-  
-
   process.exit(0);
 };
 
