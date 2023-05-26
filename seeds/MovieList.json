@@ -1,0 +1,213 @@
+[
+    {
+      "genre": "Action",
+      "name": "The Avengers",
+      "review": 8.5,
+      "rating": "PG-13"
+    },
+    {
+      "genre": "Action",
+      "name": "Die Hard",
+      "review": 9.0,
+      "rating": "R"
+    },
+    {
+      "genre": "Action",
+      "name": "Mad Max: Fury Road",
+      "review": 8.9,
+      "rating": "R"
+    },
+    {
+      "genre": "Action",
+      "name": "Mission: Impossible - Fallout",
+      "review": 8.7,
+      "rating": "PG-13"
+    },
+    {
+      "genre": "Action",
+      "name": "John Wick",
+      "review": 8.3,
+      "rating": "R"
+    },
+    {
+      "genre": "Comedy",
+      "name": "Anchorman: The Legend of Ron Burgundy",
+      "review": 7.8,
+      "rating": "PG-13"
+    },
+    {
+      "genre": "Comedy",
+      "name": "Superbad",
+      "review": 7.6,
+      "rating": "R"
+    },
+    {
+      "genre": "Comedy",
+      "name": "Bridesmaids",
+      "review": 7.9,
+      "rating": "R"
+    },
+    {
+      "genre": "Comedy",
+      "name": "The Hangover",
+      "review": 7.7,
+      "rating": "R"
+    },
+    {
+      "genre": "Comedy",
+      "name": "Airplane!",
+      "review": 8.0,
+      "rating": "PG"
+    },
+    {
+      "genre": "Drama",
+      "name": "The Shawshank Redemption",
+      "review": 9.3,
+      "rating": "R"
+    },
+    {
+      "genre": "Drama",
+      "name": "The Godfather",
+      "review": 9.2,
+      "rating": "R"
+    },
+    {
+      "genre": "Drama",
+      "name": "Pulp Fiction",
+      "review": 8.9,
+      "rating": "R"
+    },
+    {
+      "genre": "Drama",
+      "name": "Fight Club",
+      "review": 8.8,
+      "rating": "R"
+    },
+    {
+      "genre": "Drama",
+      "name": "The Social Network",
+      "review": 8.0,
+      "rating": "PG-13"
+    },
+    {
+      "genre": "Fantasy",
+      "name": "The Lord of the Rings: The Fellowship of the Ring",
+      "review": 8.8,
+      "rating": "PG-13"
+    },
+    {
+      "genre": "Fantasy",
+      "name": "Harry Potter and the Sorcerer's Stone",
+      "review": 7.6,
+      "rating": "PG"
+    },
+    {
+      "genre": "Fantasy",
+      "name": "Pan's Labyrinth",
+      "review": 8.2,
+      "rating": "R"
+    },
+    {
+      "genre": "Fantasy",
+      "name": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+      "review": 6.9,
+      "rating": "PG"
+    },
+    {
+      "genre": "Fantasy",
+      "name": "Stardust",
+      "review": 7.6,
+      "rating": "PG-13"
+    },
+    {
+      "genre": "Horror",
+      "name": "The Shining",
+      "review": 8.4,
+      "rating": "R"
+    },
+    {
+      "genre": "Horror",
+      "name": "Get Out",
+      "review": 7.7,
+      "rating": "R"
+    },
+    {
+      "genre": "Horror",
+      "name": "A Quiet Place",
+      "review": 7.5,
+      "rating": "PG-13"
+    },
+    {
+      "genre": "Horror",
+      "name": "The Conjuring",
+      "review": 7.5,
+      "rating": "R"
+    },
+    {
+      "genre": "Horror",
+      "name": "Halloween",
+      "review": 7.8,
+      "rating": "R"
+    },
+    {
+      "genre": "Sci-Fi",
+      "name": "Blade Runner",
+      "review": 8.1,
+      "rating": "R"
+    },
+    {
+      "genre": "Sci-Fi",
+      "name": "The Matrix",
+      "review": 8.7,
+      "rating": "R"
+    },
+    {
+      "genre": "Sci-Fi",
+      "name": "Inception",
+      "review": 8.8,
+      "rating": "PG-13"
+    },
+    {
+      "genre": "Sci-Fi",
+      "name": "Interstellar",
+      "review": 8.6,
+      "rating": "PG-13"
+    },
+    {
+      "genre": "Sci-Fi",
+      "name": "E.T. the Extra-Terrestrial",
+      "review": 7.8,
+      "rating": "PG"
+    },
+    {
+      "genre": "Thriller",
+      "name": "The Silence of the Lambs",
+      "review": 8.6,
+      "rating": "R"
+    },
+    {
+      "genre": "Thriller",
+      "name": "Gone Girl",
+      "review": 8.1,
+      "rating": "R"
+    },
+    {
+      "genre": "Thriller",
+      "name": "Se7en",
+      "review": 8.6,
+      "rating": "R"
+    },
+    {
+      "genre": "Thriller",
+      "name": "Shutter Island",
+      "review": 8.2,
+      "rating": "R"
+    },
+    {
+      "genre": "Thriller",
+      "name": "The Sixth Sense",
+      "review": 8.1,
+      "rating": "PG-13"
+    }
+  ]
+  
