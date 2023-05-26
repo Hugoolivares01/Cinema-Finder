@@ -2,7 +2,7 @@ const User = require('./User');
 const MovieList = require('./MovieList');
 const SavedMovies = require('./SavedMovies');
 
-User.hasMany(Movies, {
+User.belongsTo(SavedMovies, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
 });
