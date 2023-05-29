@@ -1,0 +1,20 @@
+[
+    {
+        "genre": "Action",
+        "name": "The Avengers",
+        "review": 8.5,
+        "rating": "PG-13"
+    },
+    {
+        "genre": "Action",
+        "name": "Die Hard",
+        "review": 9.0,
+        "rating": "R"
+    },
+    {
+        "genre": "Action",
+        "name": "Mad Max: Fury Road",
+        "review": 8.9,
+        "rating": "R"
+    }
+]

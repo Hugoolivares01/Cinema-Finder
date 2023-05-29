@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Project, User, MovieList } = require('../models');
+const { Project, User, MovieList, SavedMovies } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -27,9 +27,12 @@ router.get('/movies', withAuth, async (req, res) => {
   try {
     const movieData = await MovieList.findAll();
     const movies = movieData.map((movie) => movie.get({ plain: true }));
+    const savedMovieData = await SavedMovies.findAll();
+    const savedMovies = savedMovieData.map((saved) => saved.get({ plain: true }));
     res.render('Movies', {
       movies,
-      logged_in: true
+      logged_in: true,
+      savedMovies
     });
   } catch (err) {
     res.status(500).json(err);
