@@ -1,7 +1,8 @@
-const movBtn = document.querySelector("#saveMovie")
-const movBtn2 = document.querySelector("button")
+const movBtn = document.querySelectorAll("#saveMovie")
 
-movBtn2.addEventListener("click", () => {
-    console.log("hello")
-})
-
+// adds event listener to each button
+movBtn.forEach(btn => {
+    btn.addEventListener("click", () => {
+        console.log(btn.parentElement.firstChild)
+    })
+});
