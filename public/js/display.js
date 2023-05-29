@@ -17,8 +17,13 @@ delBtn.forEach(btn => {
     })
 });
 
-// TODOS:
+// TODOS: Save Movie
 // 1. get the id of the correct element
 // 2. query the database to get all the other information related to the movie
 // 3. add the saved movie to the saved movie table
-// 4. render the movie information from the SQL query as a new element under the SavedMovies List
+// 4. render the movie information from the SQL query as a new element under the SavedMovies List or rerender the handlebars template somehow
+
+// TODOS: Delete Movie
+// 1. get the id of the correct element
+// 2. Remove the saved movie from the saved movie table
+// 3. Delete the saved movie from the saved movie html section or rerender the handlebars template somehow with update table for saved movies
