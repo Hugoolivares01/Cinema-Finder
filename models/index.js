@@ -2,7 +2,7 @@ const User = require('./User');
 const MovieList = require('./MovieList');
 const SavedMovies = require('./SavedMovies');
 
-User.belongsTo(SavedMovies, {
+SavedMovies.belongsTo(User, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
 });

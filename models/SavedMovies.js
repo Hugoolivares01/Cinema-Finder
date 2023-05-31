@@ -1,7 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class SavedMovies extends Model {}
+
+class SavedMovies extends Model { }
 
 SavedMovies.init(
   {
@@ -26,6 +27,13 @@ SavedMovies.init(
     rating: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
     }
   },
   {
