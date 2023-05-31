@@ -9,23 +9,33 @@
     <div class="row mb-2">
         <div class="col-md-8">
             <h4>{{genre}}, {{name}},{{review}}, {{rating}}</h4>
-            {{!-- puts the id of the movie with "display none" so we can get it--}}
             <p style="display: none;">{{id}}</p>
         </div>
         <button id="saveMovie">Save Movie</button>
     </div>
-
     {{/each}}
 </div>
 
-<h1> My movies </h1>
+<h1>Movie Review</h1>
 
+<form id="reviewForm">
+    <div>
+        <label for="movieName">Movie Name:</label>
+        <input type="text" id="movieName" name="movieName" required>
+    </div>
+    <div>
+        <label for="review">Review (1-10):</label>
+        <input type="number" id="review" name="review" min="1" max="10" required>
+    </div>
+    <button type="submit">Submit Review</button>
+</form>
+
+<h1>My movies</h1>
 <div>
     {{#each savedMovies}}
     <div class="row mb-2">
         <div class="col-md-8">
             <h4>{{genre}}, {{name}},{{review}}, {{rating}}</h4>
-            {{!-- puts the id of the movie with "display none" so we can get it--}}
             <p style="display: none;">{{id}}</p>
         </div>
         <button id="deleteMovie">Delete Movie</button>
