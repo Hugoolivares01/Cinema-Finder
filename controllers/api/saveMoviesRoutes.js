@@ -13,13 +13,13 @@ router.get('/', async (req, res) => {
 router.post('/', withAuth, async (req, res) => {
     try {
 
-        // Find the logged in user based on the session ID
-        const userData = await User.findByPk(req.session.user_id, {
-            attributes: { exclude: ['password'] },
-            include: [{ model: SavedMovies }],
-        });
+        // // Find the logged in user based on the session ID
+        // const userData = await User.findByPk(req.session.user_id, {
+        //     attributes: { exclude: ['password'] },
+        //     include: [{ model: SavedMovies }],
+        // });
 
-        const user = userData.get({ plain: true });
+        // const user = userData.get({ plain: true });
 
         //use the id to find the correct movie from the movielist
         let movieData = await MovieList.findOne(
@@ -33,7 +33,7 @@ router.post('/', withAuth, async (req, res) => {
         console.log(movieData)
 
         //create the saved movie in the saved movie database
-        await SavedMovies.create({ id: movieData.id, genre: movieData.genre, name: movieData.name, review: movieData.review, rating: movieData.rating, user_id: user.id });
+        await SavedMovies.create({ id: movieData.id, genre: movieData.genre, name: movieData.name, review: movieData.review, rating: movieData.rating, user_id: 4 });
 
         // //pull in all the movies to rerender the handlebars template
         // const allMovieData = await MovieList.findAll();
