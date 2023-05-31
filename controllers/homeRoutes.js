@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Project, User, MovieList, SavedMovies } = require('../models');
+const { User, MovieList, SavedMovies } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
