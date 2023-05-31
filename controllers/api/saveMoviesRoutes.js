@@ -32,21 +32,23 @@ router.post('/', withAuth, async (req, res) => {
 
         console.log(movieData)
 
-        //create the saved movie in the saved movie database
+        //create the saved movie in the saved movie database - currently hardcoded to john@example.com
         await SavedMovies.create({ id: movieData.id, genre: movieData.genre, name: movieData.name, review: movieData.review, rating: movieData.rating, user_id: 4 });
 
-        // //pull in all the movies to rerender the handlebars template
-        // const allMovieData = await MovieList.findAll();
-        // const movies = allMovieData.map((movie) => movie.get({ plain: true }));
-        // const savedMovieData = await SavedMovies.findAll();
-        // const savedMovies = savedMovieData.map((saved) => saved.get({ plain: true }));
+        //pull in all the movies to rerender the handlebars template
+        const allMovieData = await MovieList.findAll();
+        const movies = allMovieData.map((movie) => movie.get({ plain: true }));
+        const savedMovieData = await SavedMovies.findAll();
+        const savedMovies = savedMovieData.map((saved) => saved.get({ plain: true }));
 
-        // //render the handlebars template
+        //render the handlebars template
         // res.render('Movies', {
         //     movies,
         //     logged_in: true,
         //     savedMovies
         // });
+
+        res.redirect('/Movies')
 
         console.log(movieData.name)
         console.log("Successfully created a new saved movie!")
