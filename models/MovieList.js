@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class MovieList extends Model {}
+class MovieList extends Model { }
 
 MovieList.init(
   {
@@ -20,8 +20,12 @@ MovieList.init(
       allowNull: false,
     },
     review: {
-      type: DataTypes.FLOAT,
+      type: DataTypes.INTEGER,
       allowNull: false,
+      validate: {
+        min: 1,
+        max: 10,
+      },
     },
     rating: {
       type: DataTypes.STRING,
