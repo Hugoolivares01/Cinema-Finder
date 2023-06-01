@@ -18,6 +18,7 @@ movBtn.forEach(btn => {
                 body: JSON.stringify({ id }),
                 headers: { 'Content-Type': 'application/json' },
             });
+            document.location.reload()
             // console.log(response)
         } catch (error) {
             console.log(error)
