@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Project, User, MovieList, SavedMovies } = require('../models');
+const { User, MovieList, SavedMovies } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -35,8 +35,10 @@ router.get('/movies', withAuth, async (req, res) => {
   try {
     const movieData = await MovieList.findAll();
     const movies = movieData.map((movie) => movie.get({ plain: true }));
-    const savedMovieData = await SavedMovies.findAll();
+
+    const savedMovieData = await SavedMovies.findAll({ where: { user_id: req.session.user_id } });
     const savedMovies = savedMovieData.map((saved) => saved.get({ plain: true }));
+
     res.render('Movies', {
       movies,
       logged_in: true,
