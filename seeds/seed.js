@@ -19,7 +19,7 @@ const seedDatabase = async () => {
   const movies = await MovieList.bulkCreate(sortedMovies);
 
   //seed the saved movies
-  const saved = await SavedMovies.bulkCreate(savedMovies);
+  // const saved = await SavedMovies.bulkCreate(savedMovies);
 
   process.exit(0);
 };
