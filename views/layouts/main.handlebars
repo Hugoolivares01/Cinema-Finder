@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movies</title>
-  {{!-- <link rel="stylesheet" href="/css/jass.css"> --}}
+  {{!--
+  <link rel="stylesheet" href="/css/jass.css"> --}}
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -22,7 +23,7 @@
         <a href="/logout" id="logout">Logout</a>
         {{else}}
         <a href="/login">Login</a>
-         <a href="/Signup">Sign up</a>
+        <a href="/Signup">Sign up</a>
         {{/if}}
       </nav>
     </header>
@@ -36,12 +37,13 @@
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   <script src="/js/display.js"></script>
+  <script src="/js/delete.js"></script>
   {{/if}}
 
 
-<footer>
+  <footer>
 
-</footer>
+  </footer>
 
 </body>
 
