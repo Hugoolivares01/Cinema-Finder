@@ -1,18 +1,31 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+const MovieList = require('./MovieList');
 
-class SubmittedRating extends Model { }
+class SubmittedRatings extends Model { }
 
-SubmittedRating.init(
+SubmittedRatings.init(
   {
-    movie_id: {
+    id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-    },    
-    rating: {
-      type: DataTypes.STRING,
+      autoIncrement: true,
+    },
+    movie_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'MovieList',
+        key: 'id',
+      }
+    },
+    review: {
+      type: DataTypes.INTEGER,
       allowNull: false,
+      validate: {
+        min: 1,
+        max: 10,
+      },
     },
   },
   {
@@ -20,8 +33,13 @@ SubmittedRating.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'SubmittedRating',
+    modelName: 'SubmittedRatings',
   }
 );
 
-module.exports = SubmittedRating;
+SubmittedRatings.belongsTo(MovieList, {
+  foreignKey: 'movie_id',
+  as: 'movie',
+});
+
+module.exports = SubmittedRatings;
