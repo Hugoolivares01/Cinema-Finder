@@ -4,7 +4,9 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    res.render('Splash');
+    res.render('Splash', {
+      logged_in: req.session.logged_in
+    });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -20,6 +22,15 @@ router.get('/signup', async (req, res) => {
   }
 });
 
+router.get('/logout', (req, res) => {
+  req.session.destroy((err) => {
+    if (err) {
+      res.status(500).json(err);
+    } else {
+      res.redirect('/');
+    }
+  });
+});
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
