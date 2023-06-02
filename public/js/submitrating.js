@@ -4,7 +4,7 @@ document.getElementById('reviewForm').addEventListener('submit', async function(
     const movieName = document.getElementById('movieName').value;
     const review = document.getElementById('review').value;
   
-    const response = await fetch('/api/reviews', {
+    const response = await fetch('/api/review', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

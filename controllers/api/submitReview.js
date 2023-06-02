@@ -1,8 +1,10 @@
 const router = require('express').Router();
 const withAuth = require('../../utils/auth');
 const { Sequelize } = require('sequelize');
+const MovieList = require('../../models/MovieList');  // Add this line
+const SubmittedRating = require('../../models/SubmittedRating');  
 
-router.post('/reviews', async (req, res) => {
+router.post('/', async (req, res) => {
     const { movieName, review } = req.body;
   
     const movie = await MovieList.findOne({ where: { name: movieName } });
@@ -12,12 +14,12 @@ router.post('/reviews', async (req, res) => {
   
     const movieId = movie.id;
   
-    await SubmittedRatings.create({
+    await SubmittedRating.create({
       movie_id: movieId,
       review: review,
     });
   
-    const avgReview = await SubmittedRatings.findAll({
+    const avgReview = await SubmittedRating.findAll({
       where: {
         movie_id: movieId,
       },
