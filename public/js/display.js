@@ -2,6 +2,7 @@
 
 const movBtn = document.querySelectorAll("#saveMovie")
 const delBtn = document.querySelectorAll("#deleteMovie")
+const movRvw = document.querySelectorAll("movieReview")
 let id = 0
 
 // adds event listener to each save movie button
