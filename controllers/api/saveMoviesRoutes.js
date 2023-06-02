@@ -2,6 +2,8 @@ const router = require('express').Router();
 const { SavedMovies, MovieList, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+
+
 router.post('/', async (req, res) => {
     try {
         //use the id to find the correct movie from the movielist
