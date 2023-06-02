@@ -1,16 +1,18 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+const MovieList = require("./MovieList")
+const User = require("./User")
+
 
 class SavedMovies extends Model { }
 
 SavedMovies.init(
   {
-    id: {
+    movie_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
     },
     genre: {
       type: DataTypes.STRING,
@@ -30,11 +32,34 @@ SavedMovies.init(
     },
     user_id: {
       type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
-    }
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    // movie_id: {
+    //   type: DataTypes.INTEGER,
+    //   unique: true,
+    //   references: {
+    //     model: MovieList,
+    //     key: 'id'
+    //   },
+    // },
+    // user_id: {
+    //   type: DataTypes.INTEGER,
+    //   unique: true,
+    //   references: {
+    //     model: User,
+    //     key: 'id',
+    //   },
+    // },
+    // title: {
+    //   type: DataTypes.STRING,
+    //   unique: true,
+    //   references: {
+    //     model: MovieList,
+    //     key: 'title',
+    //   },
+    // }
   },
   {
     sequelize,
