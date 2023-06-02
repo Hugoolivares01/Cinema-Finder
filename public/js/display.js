@@ -5,7 +5,6 @@ let id = 0
 movBtn.forEach(btn => {
     btn.addEventListener("click", async function () {
         myEl = btn.parentElement
-        // console.log(myEl.firstChild.nextSibling.firstChild.nextSibling.innerText)
         id = (myEl.firstChild.nextSibling.firstChild.nextSibling.nextSibling.nextSibling.innerText)
         console.log(id)
 
@@ -15,7 +14,9 @@ movBtn.forEach(btn => {
                 body: JSON.stringify({ id }),
                 headers: { 'Content-Type': 'application/json' },
             });
+            console.log(response)
             document.location.reload()
+            console.log(response)
 
         } catch (error) {
             console.log(error)
