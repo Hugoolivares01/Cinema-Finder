@@ -13,7 +13,7 @@ delBtn.forEach(btn => {
                 body: JSON.stringify({ id }),
                 headers: { 'Content-Type': 'application/json' },
             });
-            // document.location.reload()
+            window.location.reload()
 
         } catch (error) {
             console.log(error)
