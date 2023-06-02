@@ -20,6 +20,15 @@ router.get('/signup', async (req, res) => {
   }
 });
 
+router.get('/logout', (req, res) => {
+  req.session.destroy((err) => {
+    if (err) {
+      res.status(500).json(err);
+    } else {
+      res.redirect('/');
+    }
+  });
+});
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
