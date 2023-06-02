@@ -29,13 +29,14 @@ router.post('/', async (req, res) => {
 
 router.delete('/', withAuth, async (req, res) => {
     try {
-
-        await SavedMovies.destroy({
+        delMovie = await SavedMovies.destroy({
             where: {
                 movie_id: req.body.id,
                 user_id: req.session.user_id,
             },
         });
+
+        res.status(200).json(delMovie)
     } catch (err) {
         console.log(err)
         res.status(400).json(err);
