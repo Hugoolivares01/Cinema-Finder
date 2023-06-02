@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { urlencoded } = require('express');
 const { SavedMovies, MovieList, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
@@ -15,7 +16,8 @@ router.post('/', async (req, res) => {
             genre: movieData.genre,
             name: movieData.name,
             review: movieData.review,
-            rating: movieData.rating
+            rating: movieData.rating,
+            image_url: movieData.image_url
         });
         res.status(200).json(savedMovie)
         console.log("Successfully created a new saved movie!")
