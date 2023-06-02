@@ -36,6 +36,8 @@ router.delete('/', withAuth, async (req, res) => {
                 user_id: req.session.user_id,
             },
         });
+        document.location.reload();
+        res.status(200);
     } catch (err) {
         console.log(err)
         res.status(400).json(err);
