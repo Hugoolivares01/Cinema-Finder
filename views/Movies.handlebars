@@ -8,13 +8,28 @@
     {{#each movies}}
     <div class="row mb-2">
         <div class="col-md-8">
-            <h4>{{genre}}, {{name}},{{review}}, {{rating}} <div><img src={{image_url}} alt="Movie Poster"></div></h4>
-           
+            <h4>{{genre}}, {{name}},{{review}}, {{rating}}
+                <div>
+                    <a href="" id="modaldisplay" data-target="#myModal"> <img src={{image_url}}></a>
+                </div>
+
+            </h4>
             <p style="display: none;">{{id}}</p>
         </div>
-        <button id="saveMovie">Save Movie</button>
+
     </div>
     {{/each}}
+    <h1>Modal Example</h1>
+
+    <button id="openModalBtn">Open Modal</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img src="" alt="" id="modalImage">
+            <button id="saveMovie">Save Movie</button>
+        </div>
+    </div>
 </div>
 
 <h1>Movie Review</h1>
@@ -45,3 +60,4 @@
     </div>
     {{/each}}
 </div>
+<script src="/js/modal.js"></script>
