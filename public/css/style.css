@@ -10,14 +10,81 @@ body {
   min-height: 100vh;
 }
 
+/* Add these styles for the header */
 header {
-  background-color: #50a3a2;
-  color: #fff;
-  padding: 2rem;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 0rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  overflow: hidden;
+  position: relative; /* Added */
+}
+
+.header-image {
+  position: absolute;
+  top: 100%; /* Adjust this value to move the image further down */
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateY(-50%); /* Added */
+  object-fit: cover;
+  z-index: -1;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Update the nav styles */
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  position: relative;
+}
+
+nav:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  z-index: -1;
+  transform-origin: top center;
+  transform: skewY(-8deg);
+}
+
+nav a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+nav ul li {
+  margin-right: 2rem;
+}
+
+
 
 h1 {
   font-size: 1.5rem;

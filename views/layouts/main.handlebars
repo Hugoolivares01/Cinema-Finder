@@ -13,20 +13,23 @@
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
+      <img class="header-image" src="/img/curtain.png" alt="Movie Curtain" />
       <h1>
         <span role="img" aria-label="money">🎬</span>
         <a href="/">Cinema Finder</a>
       </h1>
-      <nav>
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/logout" id="logout">Logout</a>
-        <a href="/Movies" id="movies">Movies</a>
-        {{else}}
-        <a href="/login">Login</a>
-        <a href="/Signup">Sign up</a>
-        {{/if}}
-      </nav>
+      <div class="header-content">
+        <nav>
+          <!-- Conditionally render login or logout links -->
+          {{#if logged_in}}
+          <a href="/logout" id="logout">Logout</a>
+          <a href="/Movies" id="movies">Movies</a>
+          {{else}}
+          <a href="/login">Login</a>
+          <a href="/Signup">Sign up</a>
+          {{/if}}
+        </nav>
+      </div>
     </header>
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
@@ -39,7 +42,7 @@
   <script src="/js/logout.js"></script>
   <script src="/js/display.js"></script>
   <script src="/js/delete.js"></script>
-    <script src="/js/submitrating.js"></script>
+  <script src="/js/submitrating.js"></script>
 
   {{/if}}
 
