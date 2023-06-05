@@ -8,6 +8,17 @@ body {
   min-height: 100vh;
 }
 
+.logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-image {
+  width: 20%; /* Adjust the width as needed */
+  height: auto;
+}
+
 /* Add these styles for the header */
 header {
   background-color: var(--secondary-color);
@@ -22,7 +33,7 @@ header {
 
 .header-image {
   position: absolute;
-  top: 100%;
+  top: 65%;
   /* Adjust this value to move the image further down */
   left: 0;
   width: 100%;
