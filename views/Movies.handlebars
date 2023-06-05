@@ -10,18 +10,14 @@
         <div class="col-md-8">
             <h4>{{genre}}, {{name}},{{review}}, {{rating}}
                 <div>
-                    <a href="" id="modaldisplay" data-target="#myModal"> <img src={{image_url}}></a>
+                    <a href="" id="modaldisplay"> <img id="modalimage" src={{image_url}}></a>
                 </div>
-
             </h4>
-            <p style="display: none;">{{id}}</p>
+            <p id="pictureid" style="display: none;">{{id}}</p>
         </div>
 
     </div>
     {{/each}}
-    <h1>Modal Example</h1>
-
-    <button id="openModalBtn">Open Modal</button>
 
     <div id="myModal" class="modal">
         <div class="modal-content">
@@ -43,7 +39,7 @@
         <label for="review">Review (1-10):</label>
         <input type="number" id="review" name="review" min="1" max="10" required>
     </div>
-    <button id="reviewForm" type="submit">Submit Review</button>
+    <button type="submit">Submit Review</button>
 </form>
 
 <h1>My movies</h1>
@@ -52,7 +48,7 @@
     <div class="row mb-2">
         <div class="col-md-8">
             <h4>{{genre}}, {{name}}, {{review}}, {{rating}}</h4>
-            <div><img src={{image_url}} alt="Movie Poster"></div>
+            <div><img id="savedmovie" src={{image_url}} alt="Movie Poster"></div>
             {{!-- puts the id of the movie with "display none" so we can get it--}}
             <p style="display: none;">{{movie_id}}</p>
         </div>

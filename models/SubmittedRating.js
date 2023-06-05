@@ -37,9 +37,4 @@ SubmittedRatings.init(
   }
 );
 
-SubmittedRatings.belongsTo(MovieList, {
-  foreignKey: 'movie_id',
-  as: 'movie',
-});
-
 module.exports = SubmittedRatings;

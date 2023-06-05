@@ -20,10 +20,10 @@ MovieList.init(
       allowNull: false,
     },
     review: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DECIMAL(3, 1),
       allowNull: false,
       validate: {
-        min: 1,
+        min: 0,
         max: 10,
       },
     },
