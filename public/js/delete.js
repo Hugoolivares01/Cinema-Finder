@@ -1,6 +1,4 @@
 const delBtn = document.querySelectorAll("#deleteMovie")
-
-// adds event listener to each  delete button
 delBtn.forEach(btn => {
     btn.addEventListener("click", async () => {
         myEl = btn.parentElement

@@ -18,7 +18,7 @@
 
 <h1>Movie Review</h1>
 
-<form id="reviewForm">
+<form id="reviewForm" action="/review" method="POST">
     <div>
         <label for="movieName">Movie Name:</label>
         <input type="text" id="movieName" name="movieName" required>
@@ -36,7 +36,6 @@
     <div class="row mb-2">
         <div class="col-md-8">
             <h4>{{genre}}, {{name}}, {{review}}, {{rating}}</h4>
-            {{!-- puts the id of the movie with "display none" so we can get it--}}
             <p style="display: none;">{{movie_id}}</p>
         </div>
         <button id="deleteMovie">Delete Movie</button>
