@@ -6,7 +6,6 @@ const withAuth = require('../../utils/auth');
 
 router.post('/', async (req, res) => {
     try {
-        //use the id to find the correct movie from the movielist
         let movieData = await MovieList.findByPk(req.body.id)
         // movieData.get({ plain: true });
         const savedMovie = await SavedMovies.create({

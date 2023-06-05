@@ -1,7 +1,5 @@
 const movBtn = document.querySelectorAll("#saveMovie")
 let id = 0
-
-// adds event listener to each save movie button
 movBtn.forEach(btn => {
     btn.addEventListener("click", async function () {
         myEl = btn.parentElement

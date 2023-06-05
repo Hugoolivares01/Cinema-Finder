@@ -7,5 +7,4 @@ router.use('/users', userRoutes);
 router.use('/save', saveMovies);
 router.use('/review', submitReview);
 
-
 module.exports = router;
