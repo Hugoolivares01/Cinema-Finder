@@ -1,21 +1,14 @@
-<h1> top 10 trending </h1>
-<div>
-    <h4> currently unknown</h4>
-</div>
-
-<h1>All movies</h1>
+<h1>Top 10 Trending Movies</h1>
 <div class="MovieSection">
-    {{#each movies}}
-    <div class="IndividualMovie">
+    {{#each topMovies}}
+    <div id="IndividualMovie">
         <div>
-            <h4>{{genre}}, {{name}},{{review}}, {{rating}}
-                <div>
-                    <a href="" id="modaldisplay"> <img id="MovieImage" src={{image_url}}></a>
-                </div>
-            </h4>
+            <h4>{{name}}</h4>
+            <div>
+                <a href="" id="modaldisplay"><img id="MovieImage" src={{image_url}}></a>
+            </div>
             <p id="pictureid">{{id}}</p>
         </div>
-
     </div>
     {{/each}}
 
@@ -23,7 +16,31 @@
         <div class="modal-content">
             <span class="close-btn">&times;</span>
             <img src="" alt="" id="modalImage">
-            <p id="ModalId"> </p>
+            <p id="ModalId"></p>
+            <button id="saveMovie">Save Movie</button>
+        </div>
+    </div>
+</div>
+
+<h1>All Movies</h1>
+<div class="MovieSection">
+    {{#each movies}}
+    <div id="IndividualMovie">
+        <div>
+            <h4>{{genre}}, {{name}}, {{review}}, {{rating}}</h4>
+            <div>
+                <a href="" id="modaldisplay"><img id="MovieImage" src={{image_url}}></a>
+            </div>
+            <p id="pictureid">{{id}}</p>
+        </div>
+    </div>
+    {{/each}}
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img src="" alt="" id="modalImage">
+            <p id="ModalId"></p>
             <button id="saveMovie">Save Movie</button>
         </div>
     </div>
