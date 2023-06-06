@@ -13,13 +13,13 @@
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
-      <img class="header-image" src="/img/curtain.png" alt="Movie Curtain" />
-      <div class="logo">
-        <a href="/">
-          <img href="/" class="logo-image" src="/img/sign.png" alt="Cinema Finder Logo" />
-        </a>
-      </div>
+      <img class="header-image" src="/img/curtain.png" alt="Movie Curtain" />      
       <div class="header-content">
+        <div class="logo">
+          <a href="/">
+            <img class="logo-image" src="/img/sign.png" alt="Cinema Finder Logo" />
+          </a>
+        </div>
         <nav>
           <!-- Conditionally render login or logout links -->
           {{#if logged_in}}

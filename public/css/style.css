@@ -64,12 +64,15 @@ body {
 }
 
 .logo-image {
-  width: 20%; /* Adjust the width as needed */
+  width: 50%; /* Adjust the width as needed */
   height: auto;
 }
 
 /* Add these styles for the header */
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--secondary-color);
   color: var(--white-color);
   padding: 0rem 0;
@@ -77,18 +80,14 @@ header {
   top: 0;
   z-index: 10;
   position: relative;
-  /* Added */
 }
 
 .header-image {
   position: absolute;
-  top: 65%;
-  /* Adjust this value to move the image further down */
+  top: 0;
   left: 0;
   width: 100%;
   height: auto;
-  transform: translateY(-50%);
-  /* Added */
   object-fit: cover;
   z-index: -1;
 }
