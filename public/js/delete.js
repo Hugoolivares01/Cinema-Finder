@@ -1,9 +1,8 @@
 const delBtn = document.querySelectorAll("#deleteMovie")
 delBtn.forEach(btn => {
     btn.addEventListener("click", async () => {
-        myEl = btn.parentElement
-        id = (myEl.firstChild.nextSibling.firstChild.nextSibling.nextSibling.nextSibling.innerText)
-        console.log(id)
+        // go up to the parent node from delete button and work down to the id p tag
+        id = btn.parentNode.children[0].children[2].innerHTML
 
         try {
             response = await fetch('/api/save', {
