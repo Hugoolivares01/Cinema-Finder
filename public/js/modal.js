@@ -16,6 +16,14 @@ const modal = (event) => {
     const imageUrl = event.currentTarget.querySelector('img').src;
     modalImage.src = imageUrl;
 
+    let reviewname = document.getElementById("movieName");
+    const Initialmovie = firstNode.querySelector('.review1').textContent;
+    const movieArray = Initialmovie.split(',');
+    const title = movieArray[1].trim();
+    reviewname.textContent = title;
+    console.log(reviewname.textContent);
+
+
 
 };
 document.querySelector('.close-btn').addEventListener('click', function () {
@@ -26,5 +34,4 @@ const moviepictures = document.querySelectorAll('#modaldisplay');
 moviepictures.forEach((picture) => {
     picture.addEventListener('click', modal);
 });
-
 

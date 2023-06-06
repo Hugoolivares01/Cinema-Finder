@@ -44,11 +44,11 @@ router.get('/login', (req, res) => {
 router.get('/movies', withAuth, async (req, res) => {
   try {
     const movieData = await MovieList.findAll();
-    let movies = movieData.map((movie) => movie.get({ plain: true }));
+    const movies = movieData.map((movie) => movie.get({ plain: true }));
 
-    movies.sort((a, b) => b.review - a.review);
-
-    const topMovies = movies.slice(0, 10);
+    const MovieD = await MovieList.findAll();
+    const moviesort = MovieD.map((movie) => movie.get({ plain: true }));
+    const topMovies = moviesort.sort((a, b) => b.review - a.review).slice(0, 10);
 
     const savedMovieData = await SavedMovies.findAll({ where: { user_id: req.session.user_id } });
     const savedMovies = savedMovieData.map((saved) => saved.get({ plain: true }));

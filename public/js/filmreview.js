@@ -1,7 +1,7 @@
 document.getElementById('reviewForm').addEventListener('submit', async function (event) {
   event.preventDefault();
 
-  const movieName = document.getElementById('movieName').value;
+  const movieName = document.getElementById('movieName').textContent;
   const review = document.getElementById('review').value;
 
   const response = await fetch('/api/review', {
