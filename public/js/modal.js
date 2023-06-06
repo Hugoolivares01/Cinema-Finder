@@ -5,12 +5,11 @@ const modal = (event) => {
     let modalId = document.getElementById('ModalId')
 
     // Work backwords from current target up to get the parent div
-    let testNode = event.currentTarget.parentNode.parentNode.parentNode
+    let firstNode = event.currentTarget.parentNode.parentNode.parentNode
 
     // Work down from the parent div to get the p tag with the movie id
-    modalId.innerHTML = testNode.children[1].innerHTML
-    console.log(testNode.children[1].innerHTML)
-
+    modalId.innerHTML = firstNode.children[0].children[2].innerHTML
+    console.log(modalId.innerHTML)
 
     document.getElementById('myModal').style.display = 'flex';
     const modalImage = document.getElementById("modalImage");
