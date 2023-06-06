@@ -19,7 +19,7 @@
 }
 
 .IndividualMovie {
-  max-width: 10vw;
+  max-width: 8vw;
   padding: 5vw;
   transition: transform 0.3s ease;
 }
