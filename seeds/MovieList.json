@@ -64,10 +64,10 @@
   },
   {
       "genre": "Comedy",
-      "name": "Airplane!",
+      "name": "Laugh at my Pain",
       "review": 8.0,
       "rating": "PG",
-      "image_url": "https://external-preview.redd.it/imrNvg2g6w2nvCxwID2BDqeKewEeLWrZQQsLCqFqfyY.jpg?auto=webp&s=ccb0900a75c3db9f129cc9e3a5f8787e390e223f"
+      "image_url": "https://image.tmdb.org/t/p/original/jk7C5sIDHSGiJjBQz6bmPNP1WOF.jpg"
   },
   {
       "genre": "Drama",
@@ -88,7 +88,7 @@
       "name": "Pulp Fiction",
       "review": 8.9,
       "rating": "R",
-      "image_url": "https://image.tmdb.org/t/p/original/jlVOS4D6ledQGxGdL0EIte3TXfL.jpg"
+      "image_url": "http://image.tmdb.org/t/p/original/pbWgQPC6l9pkpEpi3WNRSfWYNP6.jpg"
   },
   {
       "genre": "Drama",
@@ -109,7 +109,7 @@
       "name": "The Lord of the Rings: The Fellowship of the Ring",
       "review": 8.8,
       "rating": "PG-13",
-      "image_url": "https://image.tmdb.org/t/p/original/ftrUMC7yFGTFUsG1JBbfuSKAkDH.jpg"
+      "image_url": "http://www.my-sf.com/wp-content/uploads/2017/08/The-Lord-of-the-Rings-The-Fellowship-of-the-Ring-theatrical-teaser-poster.jpg"
   },
   {
       "genre": "Fantasy",
@@ -165,7 +165,7 @@
       "name": "The Conjuring",
       "review": 7.5,
       "rating": "R",
-      "image_url": "https://townsquare.media/site/518/files/2013/07/conjuring1.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89"
+      "image_url": "https://image.tmdb.org/t/p/original/ue0dKuJUhIK4aLr4YcZcNa23saL.jpg"
   },
   {
       "genre": "Horror",
@@ -193,7 +193,7 @@
       "name": "Inception",
       "review": 8.8,
       "rating": "PG-13",
-      "image_url": "https://image.tmdb.org/t/p/original/zSBVQIvx4UIHoFf1oDvixHyIQrz.jpg"
+      "image_url": "https://media.movieassets.com/static/images/items/movies/posters/a8f2bbff431495ac22320455109744e8.jpg"
   },
   {
       "genre": "Sci-Fi",
@@ -221,14 +221,14 @@
       "name": "Gone Girl",
       "review": 8.1,
       "rating": "R",
-      "image_url": "https://3.bp.blogspot.com/-sYEPoMY7VMI/VLbG5iS7ZRI/AAAAAAAASNo/JAU9oWRJHSo/s1600/GoneGirlDis.jpg"
+      "image_url": "https://image.tmdb.org/t/p/original/ekJa5QNWitLZf884o0TotgdZt8r.jpg"
   },
   {
       "genre": "Thriller",
       "name": "Se7en",
       "review": 8.6,
       "rating": "R",
-      "image_url": "https://4.bp.blogspot.com/_1_0tRxd9GHo/TSDbXKwNIXI/AAAAAAAAAPo/nSEyT1RmZQk/s1600/1995-2-Seven-F.jpg "
+      "image_url": "https://d3tudoxwnizvk7.cloudfront.net/gallery-jpeg/seven_posterlarge_0-449025593.jpg "
   },
   {
       "genre": "Thriller",

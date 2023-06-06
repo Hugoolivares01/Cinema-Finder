@@ -4,6 +4,8 @@ const modal = (event) => {
     const modalImage = document.getElementById("modalImage");
     const imageUrl = event.currentTarget.querySelector('img').src;
     modalImage.src = imageUrl;
+    const Current = event.currentTarget.querySelector('#pictureid').value;
+    console.log(Current);
 
 
 };

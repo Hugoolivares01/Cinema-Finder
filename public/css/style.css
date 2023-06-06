@@ -1,3 +1,12 @@
+.MovieSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#IndividualMovie{
+  max-width: 15vw;
+  padding: 5vw;
+}
 .modal {
   position: fixed;
   top: 0;
@@ -30,8 +39,8 @@
   max-height: 40vh;
 }
 
-#modalimage { 
-  max-height: 50vh;
+#MovieImage { 
+  max-width: 20vh;
 }
 
 #modalImage { 
