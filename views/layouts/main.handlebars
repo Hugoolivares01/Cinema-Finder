@@ -23,11 +23,11 @@
         <nav>
           <!-- Conditionally render login or logout links -->
           {{#if logged_in}}
-          <a href="/logout" id="logout">Logout</a>
-          <a href="/Movies" id="movies">Movies</a>
+          <a href="/logout" id="logout" class="header-button">Logout</a>
+          <a href="/Movies" id="movies" class="header-button">Movies</a>
           {{else}}
-          <a href="/login">Login</a>
-          <a href="/Signup">Sign up</a>
+          <a href="/login" class="header-button">Login</a>
+          <a href="/Signup" class="header-button">Sign up</a>
           {{/if}}
         </nav>
       </div>

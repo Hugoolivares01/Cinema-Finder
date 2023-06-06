@@ -1,12 +1,38 @@
+.toptitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #330000, #660000);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-top: 25vh;
+}
+
 .MovieSection {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
+  background: linear-gradient(to bottom, #330000, #660000);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
 .IndividualMovie {
-  max-width: 15vw;
+  max-width: 10vw;
   padding: 5vw;
+  transition: transform 0.3s ease;
+}
+
+.IndividualMovie:hover {
+  transform: scale(1.05);
+}
+
+.SavedMovieContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .modal {
@@ -23,19 +49,26 @@
 }
 
 .modal-content {
+  position: relative;
   justify-content: center;
-  background-color: #ffffff;
   padding: 10vw;
   border-radius: 5vw;
   max-width: 500px;
+  background-color: #000;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 25px;
+  right: 55px;
+  font-size: 85px; /* Adjust to your preference */
+  font-weight: bold;
+  color: #c00000; /* Adjust to your preference */
   cursor: pointer;
 }
+
 
 #savedmovie {
   max-height: 40vh;
@@ -43,6 +76,17 @@
 
 .MovieImage {
   max-width: 20vh;
+  transition: transform 0.3s ease;
+}
+
+.MovieImage:hover {
+  transform: scale(1.05);
+}
+
+#reviewForm {
+  background: #fff;
+  border: 2px dashed #ffcc00;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 #modalImage {
@@ -53,7 +97,7 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: #333;
-  background: #f4f4f4;
+  background: linear-gradient(45deg, #000, #330000);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -94,6 +138,12 @@ header {
   object-fit: cover;
   z-index: -1;
 }
+
+.header-button:hover {
+  background: linear-gradient(to right, #b30000, #ff0000);
+  color: #fff;
+}
+
 
 .header-content {
   position: relative;
@@ -170,17 +220,14 @@ h1 a {
 nav a,
 button {
   color: #fff;
-  background-color: #333;
   text-decoration: none;
   margin-left: 1.5rem;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-}
-
-nav a:hover,
-button:hover {
-  background-color: #37a;
+  border: 2px dashed #fff;
+  background: linear-gradient(to right, #ff0000, #b30000);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .container {
@@ -192,20 +239,18 @@ button:hover {
 
 button {
   padding: 0.8rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  background-color: #50a3a2;
-  color: #fff;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin: 0 auto;
   display: flex;
+  border: 2px dashed #fff;
+  background: linear-gradient(to right, #ff0000, #b30000);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 button:hover {
-  background: #37a;
-  transition: background 0.5s ease;
+  background: linear-gradient(to right, #b30000, #ff0000);
 }
 
 footer {
@@ -318,9 +363,11 @@ h2 {
   margin-top: 2rem;
 }
 
-h4 {
-  color: #065b83;
-  cursor: cell;
+h4,
+p {
+  color: #fff; /* Changes text color to white */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+  text-align: center;
 }
 
 .form-button:hover {
