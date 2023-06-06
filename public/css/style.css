@@ -155,7 +155,7 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-grow: 1;
-  /* Add this property to allow the title to expand and center */
+  color: aliceblue;
 }
 
 h1 a {
@@ -308,6 +308,15 @@ footer {
 h2 {
   text-align: center;
   margin-top: 2rem;
+}
+
+h4 {
+  color: #065b83;
+  cursor: cell;
+}
+
+.form-button:hover {
+  background-color: #37a;
 }
 
 .slideshow-container {
