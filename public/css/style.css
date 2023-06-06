@@ -116,6 +116,12 @@ header {
   z-index: -1;
 }
 
+.header-button:hover {
+  background: linear-gradient(to right, #b30000, #ff0000);
+  color: #fff;
+}
+
+
 .header-content {
   position: relative;
   z-index: 1;
