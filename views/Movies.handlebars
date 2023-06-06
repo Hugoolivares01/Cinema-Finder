@@ -1,11 +1,11 @@
 <h1>Top 10 Trending Movies</h1>
 <div class="MovieSection">
     {{#each topMovies}}
-    <div id="">
+    <div id="" class="IndividualMovie">
         <div>
             <h4>{{name}}</h4>
             <div>
-                <a href="" id=""><img id="" src={{image_url}}></a>
+                <a href="" id=""><img id="" class="MovieImage" src={{image_url}}></a>
             </div>
             <p id="">{{id}}</p>
         </div>
@@ -16,11 +16,11 @@
 <h1>All Movies</h1>
 <div class="MovieSection">
     {{#each movies}}
-    <div id="IndividualMovie">
+    <div id="IndividualMovie" class="IndividualMovie">
         <div>
             <h4>{{genre}}, {{name}}, {{review}}, {{rating}}</h4>
             <div>
-                <a href="" id="modaldisplay"><img id="MovieImage" src={{image_url}}></a>
+                <a href="" id="modaldisplay"><img id="MovieImage" class="MovieImage" src={{image_url}}></a>
             </div>
             <p id="pictureid">{{id}}</p>
         </div>
