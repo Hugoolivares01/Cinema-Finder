@@ -22,11 +22,12 @@ Please refer to the LICENSE in the repo.
 
 ## Technologies 
 
-
+TMDB API database, animate.css. 
 
 # Screenshot
 
-![screenshot]()
+![screenshot](screenshot\localhost_3001_splash.png)
+![screenshot](screenshot\localhost_3001_login.png)
 
 # Link 
 
