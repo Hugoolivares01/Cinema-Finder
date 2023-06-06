@@ -7,7 +7,7 @@
             <div>
                 <a href="" id=""><img id="" class="MovieImage" src={{image_url}}></a>
             </div>
-            <p id="">{{id}}</p>
+            <p id=""style="display: none;">{{id}}</p>
         </div>
     </div>
     {{/each}}
@@ -18,11 +18,11 @@
     {{#each movies}}
     <div id="IndividualMovie" class="IndividualMovie">
         <div>
-            <h4>{{genre}}, {{name}}, {{review}}, {{rating}}</h4>
+            <h4 class="review1" >{{genre}}, {{name}}, {{review}}, {{rating}}</h4>
             <div>
                 <a href="" id="modaldisplay"><img id="MovieImage" class="MovieImage" src={{image_url}}></a>
             </div>
-            <p id="pictureid">{{id}}</p>
+            <p id="pictureid" style="display: none;">{{id}}</p>
         </div>
     </div>
     {{/each}}
@@ -31,25 +31,27 @@
         <div class="modal-content">
             <span class="close-btn">&times;</span>
             <img src="" alt="" id="modalImage">
-            <p id="ModalId"></p>
+            <p id="ModalId" style="display: none;"></p>
             <button id="saveMovie">Save Movie</button>
+
+            <form id="reviewForm" action="/review" method="POST">
+                <div>
+                    <p id="movieName" style="display: none;" name="movieName"></p>
+                </div>
+                <div>
+                    <label for="review">Review (1-10):</label>
+                    <input type="number" id="review" name="review" min="1" max="10" required>
+                </div>
+                <button type="submit">Submit Review</button>
+            </form>
+
         </div>
     </div>
 </div>
 
 <h1>Movie Review</h1>
 
-<form id="reviewForm" action="/review" method="POST">
-    <div>
-        <label for="movieName">Movie Name:</label>
-        <input type="text" id="movieName" name="movieName" required>
-    </div>
-    <div>
-        <label for="review">Review (1-10):</label>
-        <input type="number" id="review" name="review" min="1" max="10" required>
-    </div>
-    <button type="submit">Submit Review</button>
-</form>
+
 
 <h1>My movies</h1>
 <div>
