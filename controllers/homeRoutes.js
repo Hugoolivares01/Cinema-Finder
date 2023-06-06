@@ -44,13 +44,18 @@ router.get('/login', (req, res) => {
 router.get('/movies', withAuth, async (req, res) => {
   try {
     const movieData = await MovieList.findAll();
-    const movies = movieData.map((movie) => movie.get({ plain: true }));
+    let movies = movieData.map((movie) => movie.get({ plain: true }));
+
+    movies.sort((a, b) => b.review - a.review);
+
+    const topMovies = movies.slice(0, 10);
 
     const savedMovieData = await SavedMovies.findAll({ where: { user_id: req.session.user_id } });
     const savedMovies = savedMovieData.map((saved) => saved.get({ plain: true }));
 
     res.render('Movies', {
       movies,
+      topMovies,
       logged_in: true,
       savedMovies
     });
@@ -58,7 +63,5 @@ router.get('/movies', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-
-
 
 module.exports = router;
