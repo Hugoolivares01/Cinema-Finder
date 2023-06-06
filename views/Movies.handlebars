@@ -9,18 +9,18 @@
             <div>
                 <a href="" id=""><img id="" class="MovieImage" src={{image_url}}></a>
             </div>
-            <p id=""style="display: none;">{{id}}</p>
+            <p id="" style="display: none;">{{id}}</p>
         </div>
     </div>
     {{/each}}
 </div>
 
-<h1>All Movies</h1>
+<h2>All Movies</h2>
 <div class="MovieSection">
     {{#each movies}}
     <div id="IndividualMovie" class="IndividualMovie">
         <div>
-            <h4 class="review1" >{{genre}}, {{name}}, {{review}}, {{rating}}</h4>
+            <h4 class="review1">{{genre}}, {{name}}, {{review}}, {{rating}}</h4>
             <div>
                 <a href="" id="modaldisplay"><img id="MovieImage" class="MovieImage" src={{image_url}}></a>
             </div>
@@ -50,12 +50,12 @@
         </div>
     </div>
 </div>
+{{!-- I don't think we need this now... --}}
+{{!-- <h2>Movie Review</h2> --}}
 
-<h1>Movie Review</h1>
 
 
-
-<h1>My movies</h1>
+<h2>My movies</h2>
 <div class="SavedMovieContainer">
     {{#each savedMovies}}
     <div class="IndividualMovie">

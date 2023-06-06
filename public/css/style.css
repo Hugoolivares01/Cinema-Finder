@@ -63,9 +63,11 @@
   position: absolute;
   top: 25px;
   right: 55px;
-  font-size: 85px; /* Adjust to your preference */
+  font-size: 85px;
+  /* Adjust to your preference */
   font-weight: bold;
-  color: #c00000; /* Adjust to your preference */
+  color: #c00000;
+  /* Adjust to your preference */
   cursor: pointer;
 }
 
@@ -200,9 +202,18 @@ nav ul li {
   margin-right: 2rem;
 }
 
+/* Pulse animation via Animate.CSS */
+h1,
+h2 {
+  animation: pulse;
+  animation-duration: 3.5s;
+  animation-iteration-count: 5;
+}
 
 
-h1 {
+
+h1,
+h2 {
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -211,7 +222,8 @@ h1 {
   color: aliceblue;
 }
 
-h1 a {
+h1 a,
+h2 a {
   color: #fff;
   text-decoration: none;
   margin-left: 0.5rem;
@@ -365,8 +377,10 @@ h2 {
 
 h4,
 p {
-  color: #fff; /* Changes text color to white */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+  color: #fff;
+  /* Changes text color to white */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Adds a subtle shadow */
   text-align: center;
 }
 
