@@ -28,6 +28,13 @@
   transform: scale(1.05);
 }
 
+.SavedMovieContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .modal {
   position: fixed;
   top: 0;

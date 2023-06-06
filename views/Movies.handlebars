@@ -54,17 +54,16 @@
 </form>
 
 <h1>My movies</h1>
-<div>
+<div class="SavedMovieContainer">
     {{#each savedMovies}}
-    <div class="row mb-2">
-        <div class="col-md-8">
-            <h4>{{genre}}, {{name}}, {{review}}, {{rating}}</h4>
-            <img id="MovieImage" class="MovieImage" src={{image_url}}>
-            <p style="display: none;">{{movie_id}}</p>
-        </div>
+    <div class="IndividualMovie">
+        <h4>{{genre}}, {{name}}, {{review}}, {{rating}}</h4>
+        <img id="MovieImage" class="MovieImage" src={{image_url}}>
+        <p style="display: none;">{{movie_id}}</p>
         <button id="deleteMovie">Delete Movie</button>
     </div>
     {{/each}}
 </div>
+
 <script src="/js/filmreview.js"></script>
 <script src="/js/modal.js"></script>
