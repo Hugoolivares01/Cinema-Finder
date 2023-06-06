@@ -4,6 +4,7 @@
         "name": "The Avengers",
         "review": 8.5,
         "rating": "PG-13",
+        "image_url": "https://image.tmdb.org/t/p/original/pdhOE0NAZaPzjsgTvatRP1xFhG3.jpg",
         "user_id": "4"
     },
     {
@@ -11,6 +12,7 @@
         "name": "Die Hard",
         "review": 9.0,
         "rating": "R",
+        "image_url": "https://image.tmdb.org/t/p/original/pdhOE0NAZaPzjsgTvatRP1xFhG3.jpg",
         "user_id": "4"
     },
     {
@@ -18,6 +20,7 @@
         "name": "Mad Max: Fury Road",
         "review": 8.9,
         "rating": "R",
+        "image_url": "https://image.tmdb.org/t/p/original/pdhOE0NAZaPzjsgTvatRP1xFhG3.jpg",
         "user_id": "4"
     }
 ]

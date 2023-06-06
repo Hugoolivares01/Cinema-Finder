@@ -4,16 +4,29 @@
 </div>
 
 <h1>All movies</h1>
-<div>
+<div class="MovieSection">
     {{#each movies}}
-    <div class="row mb-2">
-        <div class="col-md-8">
-            <h4>{{genre}}, {{name}},{{review}}, {{rating}}</h4>
-            <p style="display: none;">{{id}}</p>
+    <div id="IndividualMovie">
+        <div>
+            <h4>{{genre}}, {{name}},{{review}}, {{rating}}
+                <div>
+                    <a href="" id="modaldisplay"> <img id="MovieImage" src={{image_url}}></a>
+                </div>
+            </h4>
+            <p id="pictureid" >{{id}}</p>
         </div>
-        <button id="saveMovie">Save Movie</button>
+
     </div>
     {{/each}}
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img src="" alt="" id="modalImage">
+            <p id="ModalId"> </p>
+            <button id="saveMovie">Save Movie</button>
+        </div>
+    </div>
 </div>
 
 <h1>Movie Review</h1>
@@ -42,3 +55,4 @@
     </div>
     {{/each}}
 </div>
+<script src="/js/modal.js"></script>
