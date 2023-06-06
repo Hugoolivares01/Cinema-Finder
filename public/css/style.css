@@ -1,6 +1,17 @@
+.toptitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #330000, #660000);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-top: 25vh;
+}
+
 .MovieSection {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   background: linear-gradient(to bottom, #330000, #660000);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -8,7 +19,7 @@
 }
 
 .IndividualMovie {
-  max-width: 15vw;
+  max-width: 10vw;
   padding: 5vw;
   transition: transform 0.3s ease;
 }
@@ -340,9 +351,11 @@ h2 {
   margin-top: 2rem;
 }
 
-h4 {
-  color: #065b83;
-  cursor: cell;
+h4,
+p {
+  color: #fff; /* Changes text color to white */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+  text-align: center;
 }
 
 .form-button:hover {
