@@ -95,6 +95,7 @@ header {
 .header-content {
   position: relative;
   z-index: 1;
+  margin-bottom: -10%;
 }
 
 
@@ -180,9 +181,10 @@ button:hover {
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   margin: auto;
   overflow: hidden;
+  margin-bottom: -10;
 }
 
 button {
