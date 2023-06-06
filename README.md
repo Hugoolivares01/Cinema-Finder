@@ -27,7 +27,6 @@ TMDB API database, animate.css.
 # Screenshot
 
 ![screenshot](screenshot\localhost_3001_splash.png)
-![screenshot](screenshot\localhost_3001_login.png)
 
 # Link 
 
