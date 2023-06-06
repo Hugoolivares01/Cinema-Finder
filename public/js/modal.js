@@ -12,7 +12,6 @@ const modal = (event) => {
     console.log(testNode.children[1].innerHTML)
 
 
-
     document.getElementById('myModal').style.display = 'flex';
     const modalImage = document.getElementById("modalImage");
     const imageUrl = event.currentTarget.querySelector('img').src;
