@@ -26,8 +26,12 @@ TMDB API database, animate.css.
 
 # Screenshot
 
-![screenshot](screenshot\localhost_3001_splash.png)
-
+![screenshot](public/img/sh1.png)        
+           
+![screenshot](public/img/sh2.png)        
+               
+![screenshot](public/img/sh3.png)        
+         
 # Link 
 
 https://cinema-finder.herokuapp.com/ 
