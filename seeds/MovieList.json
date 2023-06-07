@@ -151,7 +151,7 @@
       "name": "Get Out",
       "review": 7.7,
       "rating": "R",
-      "image_url": "http://www.blackfilm.com/read/wp-content/uploads/2017/02/Get-Out-Poster-4.jpg"
+      "image_url": "https://image.tmdb.org/t/p/original/mE24wUCfjK8AoBBjaMjho7Rczr7.jpg"
   },
   {
       "genre": "Horror",
@@ -214,7 +214,7 @@
       "name": "The Silence of the Lambs",
       "review": 8.6,
       "rating": "R",
-      "image_url": "https://posterwire.com/wp-content/uploads/silence_of_the_lambs.jpg"
+      "image_url": "https://cdn.shopify.com/s/files/1/1416/8662/products/silence_of_the_lambs_1990_styleA_teaser_original_film_art_f_5000x.jpg?v=1569227988"
   },
   {
       "genre": "Thriller",
